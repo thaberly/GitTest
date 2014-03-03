@@ -1,0 +1,6 @@
+Add configurable overlay icons with GitTortoise. Open settings in gitTortoise
+
+TortoiseGit -> Settings -> Icon Overlays -> select show overlays and unversioned
+files mark parent ... Default status cache.. Fixed drives
+___
+ 
