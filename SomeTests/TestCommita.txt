@@ -1,1 +1,3 @@
 Test Jira commit.
+
+Test for error when committing a non-existent Jira.
