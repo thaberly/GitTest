@@ -6,4 +6,4 @@ Looking at gitx gui and git bash gui.
 
 Nope gitk not gitx.
 
-sdfdsaf
+Testing commit hook.
