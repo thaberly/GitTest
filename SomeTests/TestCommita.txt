@@ -9,3 +9,5 @@ Nope gitk not gitx.
 Testing commit hook.
 
 Test commit hook in develop branch.
+
+Test a commit.
