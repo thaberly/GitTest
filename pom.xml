@@ -17,7 +17,7 @@
 <distributionManagement>
     <repository>
         <id>artifact-repository</id>
-        <url>your-artifact-repo-url</url>
+        <url>\\az\adoa_users\ASET\1020034\Here</url>
     </repository>
 </distributionManagement>
 	
