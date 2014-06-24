@@ -13,14 +13,14 @@
 <scm>
 	<connection>scm:git:https://github.com/thaberly/GitTest/</connection>
 </scm>
-
+<!--
 <distributionManagement>
     <repository>
         <id>artifact-repository</id>
         <url>\\az\adoa_users\ASET\1020034\Here</url>
     </repository>
 </distributionManagement>
-	
+-->
     <build>
       <pluginManagement>
         <plugins>
