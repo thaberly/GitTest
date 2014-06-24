@@ -59,7 +59,7 @@ dependencies in sync. You can use properties and the dependencyManagement sectio
  -->	
 
   <modules>
-  	<module>HelloWorld3</module>
+  	<module>HelloWorld2</module>
   </modules>
 
 </project>
