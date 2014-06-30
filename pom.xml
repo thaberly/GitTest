@@ -17,7 +17,7 @@
 <distributionManagement>
     <repository>
         <id>artifact-repository</id>
-        <url>\\az\adoa_users\ASET\1020034\Here</url>
+        <url>artifactory/nexus</url>
     </repository>
 </distributionManagement>
 -->
