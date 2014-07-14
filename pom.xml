@@ -58,8 +58,8 @@
 						  <target>
                             <echo>Copying Reports to a folder for a release</echo>
                             <echo>${base.dir}</echo>
-                              <copy todir="${base.dir}/reports>
-                                <fileset basedir="${base.dir}\?">
+                              <copy todir=${base.dir}/reports>
+                                <fileset basedir="${base.dir}\>
                                   <include name="**/*.wid" />
 								</fileset>
                               </copy>
