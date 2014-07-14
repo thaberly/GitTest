@@ -71,7 +71,7 @@
 						<echo>"project base directory=${project.basedir} project uri=${project.baseUri} timestamp =${maven.build.timestamp}" </echo>
 						<echo>"project source directory=${project.build.sourceDirectory} project uri=${project.baseUri} timestamp =${maven.build.timestamp}" </echo>
                               <copy todir="${project.basedir}/release">
-                                <fileset dir="${project.base.dir}/SomeTests">
+                                <fileset dir="SomeTests">
                                   <include name="*.wid" />
 								</fileset>
                               </copy>
