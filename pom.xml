@@ -67,7 +67,7 @@
 					  <configuration>
 						<target>
 						<echo>Copy files to a folder for staging deployment</echo>
-						<echo>"${project.build.directory}-${project.artifactId}-${project.version}</echo>
+						<echo>"project build directory = ${project.build.directory} project artifactId = ${project.artifactId} project version = ${project.version}"</echo>
                               <copy todir="${project.build.directory}/${project.artifactID}/reports">
                                 <fileset dir="${project.build.directory}">
                                   <include name="*.wid" />
