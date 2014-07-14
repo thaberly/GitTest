@@ -46,48 +46,22 @@
 						<echo>${base.dir}</echo>
             		</configuration>
         	</plugin>
-<!--            <plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>2.3</version>
-                <executions>
-                  <execution>
-                    <id>copy-reports</id>
-				    <phase>process-resources</phase>
-                    <goals>
-					  <goal>copy-resources</goal>
-					</goals>
-                    <configuration>
-<!--					
-					  <!-- this is important -->
-<!--					  <overwrite>true</overwrite>
-					  <!-- target -->
-<!--					  <outputDirectory>${basedir}/reports</outputDirectory>
-					  <resources>
-					    <resource>
-					      <!-- source -->
-<!--						  <directory>jobs/**/workspace/SomeBuilds/BuildTest1/*.txt</directory>
-<!--					    </resource>
-					  </resources>
-					</configuration>
-				  </execution>
-			    </executions>
-			</plugin> 
-			-->
+
+
 			<plugin>
-        <artifactId>maven-antrun-plugin</artifactId>
-        <version>1.7</version>
-        <executions>
-          <execution>
-            <phase> <!-- a lifecycle phase --> </phase>
-            <configuration>
-              <target>
-				<echo>Copying Reports to a folder for a release</echo>
-				<echo>${base.dir}</echo>
-                  <copy todir="${base.dir}/reports">
-				  
-                    <fileset basedir="${compiled.dir}\EDI">
-                        <include name="**/*.wid" />
-                    </fileset>
+              <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                  <executions>
+                    <execution>
+                      <phase>Install</phase>
+					    <configuration>
+						  <target>
+                            <echo>Copying Reports to a folder for a release</echo>
+                            <echo>${base.dir}</echo>
+                              <copy todir="${base.dir}/reports /copy>
+							    <fileset basedir="${base.dir}\?">
+                                  <include name="**/*.wid" />
+                                </fileset>
                   </copy>
               </target>
             </configuration>
