@@ -65,7 +65,7 @@
 					  <phase>install</phase>
 					  <id>prepare-deploy-package</id>
 					  <configuration>
-						<tasks>
+						<target>
 						<echo>Copy files to a folder for staging deployment</echo>
 						<echo>"${project.build.directory}-${project.artifactId}-${project.version}</echo>
                               <copy todir="${project.build.directory}/${project.artifactID}-${project.version}/reports">
@@ -73,7 +73,7 @@
                                   <include name="*.wid" />
 								</fileset>
                               </copy>
-                        </tasks>
+                        </target>
 					  </configuration>
                       <goals>
                         <goal>run</goal>
