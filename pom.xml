@@ -43,9 +43,10 @@
             		<version>1.8.1</version>
             		<configuration>
                			<tag>${project.artifactId}-${project.version}</tag>
+						<echo>${base.dir}</echo>
             		</configuration>
         	</plugin>
-            <plugin>
+<!--            <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>2.3</version>
                 <executions>
@@ -56,20 +57,22 @@
 					  <goal>copy-resources</goal>
 					</goals>
                     <configuration>
+<!--					
 					  <!-- this is important -->
-					  <overwrite>true</overwrite>
+<!--					  <overwrite>true</overwrite>
 					  <!-- target -->
-					  <outputDirectory>${basedir}/reports</outputDirectory>
+<!--					  <outputDirectory>${basedir}/reports</outputDirectory>
 					  <resources>
 					    <resource>
 					      <!-- source -->
-						  <directory>jobs/**/workspace/SomeBuilds/BuildTest1/*.txt</directory>
-					    </resource>
+<!--						  <directory>jobs/**/workspace/SomeBuilds/BuildTest1/*.txt</directory>
+<!--					    </resource>
 					  </resources>
 					</configuration>
 				  </execution>
 			    </executions>
-			</plugin>
+			</plugin> 
+			-->
 			<plugin>
         <artifactId>maven-antrun-plugin</artifactId>
         <version>1.7</version>
