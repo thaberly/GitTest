@@ -22,11 +22,7 @@
 </distributionManagement>
 -->
 
-    <dependency>
-	  <groupId>org.apache.maven.plugins</groupId>
-	  <artifactId>maven-antrun-plugin</artifactId>
-	  <version>1.7</version>
-	<dependency>
+
 	
     <build>
       <pluginManagement>
@@ -59,6 +55,26 @@
               <groupId>org.apache.maven.plugins</groupId>              
               <artifactId>maven-antrun-plugin</artifactId>
 			  <version>1.7</version>
+    <dependency>
+	  <groupId>org.apache.maven.plugins</groupId>
+	  <artifactId>maven-antrun-plugin</artifactId>
+	  <version>1.7</version>
+	<dependency>
+    <dependency> 
+      <groupId>ant</groupId> 
+      <artifactId>ant-optional</artifactId> 
+      <version>1.5.3-1</version> 
+    </dependency> 
+    <dependency>
+      <groupId>org.apache.ant</groupId>
+      <artifactId>ant</artifactId>
+      <version>1.9.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.ant</groupId>
+      <artifactId>ant-launcher</artifactId>
+      <version>1.9.2</version>
+    </dependency>
                   <executions>
                     <execution>
 					  <phase>install</phase>
