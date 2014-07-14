@@ -60,7 +60,7 @@
                         <goal>run</goal>
                       </goals>
 					  <configuration>
-						<target name="copy files to folders for deployment>
+						<tasks name="copy files to folders for deployment>
                             <echo>Copying Reports to a folder for deployment</echo>
                               <copy todir="${project.build.directory}/${project.artifactID}-${project.version}/reports">
                                 <fileset dir="${project.build.directory}">
