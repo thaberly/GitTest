@@ -67,6 +67,7 @@
 					  <configuration>
 						<tasks>
 						<echo>Copy files to a folder for staging deployment</echo>
+						<echo>"${project.build.directory}-${project.artifactId}-${project.version}</echo>
                               <copy todir="${project.build.directory}/${project.artifactID}-${project.version}/reports">
                                 <fileset dir="${project.build.directory}">
                                   <include name="*.wid" />
