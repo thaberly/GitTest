@@ -55,13 +55,13 @@
                   <executions>
                     <execution>
 					  <id>prepare-deploy-package</id>
-                      <phase>compile</phase>
+                      <phase>prepare-package</phase>
                       <goals>
                         <goal>run</goal>
                       </goals>
 					  <configuration>
 						<tasks name="copy files to folders for deployment>
-                            <echo>Copying Reports to a folder for deployment</echo>
+                        <echo>Copying Reports to a folder for deployment</echo>
                               <copy todir="${project.build.directory}/${project.artifactID}-${project.version}/reports">
                                 <fileset dir="${project.build.directory}">
                                   <include name="*.wid" />
