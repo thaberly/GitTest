@@ -58,23 +58,22 @@
 						  <target>
                             <echo>Copying Reports to a folder for a release</echo>
                             <echo>${base.dir}</echo>
-                              <copy todir="${base.dir}/reports /copy>
-							    <fileset basedir="${base.dir}\?">
+                              <copy todir="${base.dir}/reports>
+                                <fileset basedir="${base.dir}\?">
                                   <include name="**/*.wid" />
-                                </fileset>
-                  </copy>
-              </target>
-            </configuration>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-			
+								</fileset>
+                              </copy>
+                          </target>
+                        </configuration>
+                      <goals>
+                        <goal>run</goal>
+                      </goals>
+                    </execution>
+                  </executions>
+            </plugin>
         </plugins>
-      </pluginManagement>  
-    </build>
+      </pluginManagement>
+	</build>
 
 	<properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
