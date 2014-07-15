@@ -36,7 +36,7 @@
                                     <fileset dir="${project.basedir}/SomeTests">
                                     <include name="*.wid"/>
                                     </fileset>
-									<mapper type="flatten"/>
+<!--									<mapper type="flatten"/>  -->
                                   </copy>
                          </target>
                        </configuration>
