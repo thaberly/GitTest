@@ -19,7 +19,7 @@
                 <version>1.7</version>
                 <executions>
                     <execution>
-                      <phase>install</phase>
+                      <phase>package</phase>
                       <id>prepare-deploy-package</id>
                       <configuration>
                         <target>
@@ -33,8 +33,8 @@
                                     </fileset>
                                   </copy> -->
                                   <copy todir="../../../../release" flatten="true">
-                                    <fileset dir="${project.basedir}/State/">
-                                    <include name="**/*.wid" />
+                                    <fileset dir="${project.basedir}/State">
+                                    <include name="**/**/*.wid" />
                                     </fileset>
                                   </copy>
                          </target>
