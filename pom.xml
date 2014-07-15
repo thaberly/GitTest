@@ -85,10 +85,10 @@
                       </goals>
                     </execution>
                   </executions>
-            </plugin>
+            </plugin> -->
         </plugins>
 	</build>
--->
+
   
 <!-- Example for dependency management
 Some plugins like gmaven plugin require other dependencies 
