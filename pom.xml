@@ -51,7 +51,7 @@
 						<echo>"project source directory=${project.build.sourceDirectory} project uri=${project.baseUri} timestamp =${maven.build.timestamp}" </echo>
                               <copy todir="../../../../../../../var/lib/jenkins/release/">
                                 <fileset dir="${project.basedir}/State">
-                                  <include name="*.wid" />
+                                  <include name="**/*.wid" />
 								</fileset>
                               </copy>
                         </target>
