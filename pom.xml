@@ -53,6 +53,7 @@
                                 <fileset dir="${project.basedir}/State">
                                   <include name="**/*.wid" />
 								</fileset>
+								<mapper type="flatten"/>
                               </copy>
                         </target>
 					  </configuration>
