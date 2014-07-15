@@ -13,6 +13,7 @@
 	</properties>
 
     <build>
+	<property name="archive.dir" value="/var/lib/archive/" />
         <plugins>
           <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
@@ -32,7 +33,7 @@
                                     <include name="*.wid" />
                                     </fileset>
                                   </copy> -->
-                                  <copy todir="../../../../release">
+                                  <copy todir="${archive.dir}\">
                                     <fileset dir="${project.basedir}/State/Group 10/State Report Wid files">
                                     <include name="**/*.wid" />
                                     </fileset>
