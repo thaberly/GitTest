@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>StateReports</groupId>
-    <artifactId>StateReports</artifactId>
+    <artifactId>State</artifactId>
     <description>State Reports - copy Wids for archive</description>
 
     <build>
