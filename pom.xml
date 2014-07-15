@@ -34,9 +34,9 @@
                                   </copy> -->
                                   <copy todir="../../../../release">
                                     <fileset dir="${project.basedir}/State">
-                                    <include name="**/*.wid" />
+                                    <include name="**/*.wid"/>
                                     </fileset>
-									<mapper type="flatten">
+									<mapper type="flatten"/>
                                   </copy>
                          </target>
                        </configuration>
