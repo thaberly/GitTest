@@ -6,6 +6,11 @@
     <artifactId>StateReports</artifactId>
 	<version>0.1</version>
     <description>State Reports - copy Wids for archive</description>
+	
+    <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
 
     <build>
         <plugins>
