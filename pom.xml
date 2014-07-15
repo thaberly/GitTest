@@ -9,7 +9,7 @@
     <version>0.1</version>
     <packaging>pom</packaging>
     <name>Git Report Project</name>
-    <description>Copy Reports to Archive</description>
+    <description>Copy Reports to release folder for distribution</description>
 
     <scm>
         <connection>scm:git:https://github.com/thaberly/GitTest/</connection>
@@ -45,14 +45,14 @@
                         <id>prepare-deploy-package</id>
                         <configuration>
                             <target>
-                            <echo>Copy files to a folder for staging deployment</echo>
-                            <echo>*********************************************</echo>
+                            <echo>**************Project Paths and Information*******************************</echo>
                             <echo>project.build.directory = ${project.build.directory}</echo>
                             <echo>project.artifactId = ${project.artifactId} project.version = ${project.version}</echo>
                             <echo>project.basedir = ${project.basedir} project.baseUri = ${project.baseUri}</echo>
                             <echo>maven.build.timestamp =${maven.build.timestamp}</echo>
                             <echo>project.build.sourceDirectory = ${project.build.sourceDirectory}</echo>
-                            <echo>*********************************************</echo>
+                            <echo>**************************************************************************</echo>
+                            <echo>Copy files to a folder for staging deployment</echo>
                               <copy todir="/var/lib/jenkins/release/${project.artifactId}-${project.version}-${maven.build.timestamp}">
                                 <fileset dir="${project.basedir}/State">
                                   <include name="**/*.wid" />
