@@ -12,7 +12,7 @@
 
     <modules>
   	  <module>HelloProject</module>
-      <module>StateReports</module>
+      <module>State</module>
       
     </modules>
 	
