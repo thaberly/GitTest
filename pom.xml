@@ -4,13 +4,13 @@
 
     <groupId>StateReports</groupId>
     <artifactId>Wid_Reports</artifactId>
-	<version>0.1</version>
+    <version>0.1</version>
     <description>State Reports - copy Wids for archive</description>
-	
+
     <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-	</properties>
+    </properties>
 
     <build>
         <plugins>
@@ -27,16 +27,11 @@
                         <echo>"project build directory = ${project.build.directory} project artifactId = ${project.artifactId} project version = ${project.version}"</echo>
                         <echo>"project base directory=${project.basedir} project uri=${project.baseUri} timestamp =${maven.build.timestamp}" </echo>
                         <echo>"project source directory=${project.build.sourceDirectory} project uri=${project.baseUri} timestamp =${maven.build.timestamp}" </echo>
-   <!--                           <copy todir="../../../..">
-                                    <fileset dir="${project.basedir}/SomeTests">
-                                    <include name="*.wid" />
-                                    </fileset>
-                                  </copy> -->
                                   <copy todir="../../../../">
                                     <fileset dir="${project.basedir}/SomeTests">
                                     <include name="*.wid"/>
                                     </fileset>
-<!--									<mapper type="flatten"/>  -->
+<!--<mapper type="flatten"/>  -->
                                   </copy>
                          </target>
                        </configuration>
