@@ -54,7 +54,7 @@
                             <echo>**************************************************************************</echo>
                             <echo>Copy files to a folder for staging deployment</echo>
                               <copy todir="/var/lib/jenkins/release/${project.artifactId}-${project.version}-${maven.build.timestamp}">
-                                <fileset dir="${project.basedir}/State">
+                                <fileset dir="${project.basedir}">
                                   <include name="**/*.wid" />
                                 </fileset>
                                 <mapper type="flatten"/>
