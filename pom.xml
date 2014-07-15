@@ -32,7 +32,7 @@
                                     <include name="*.wid" />
                                     </fileset>
                                   </copy> -->
-                                  <copy todir="../../../../../release">
+                                  <copy todir="../../../../release">
                                     <fileset dir="${project.basedir}/State/Group 10/State Report Wid files">
                                     <include name="*.wid" />
                                     </fileset>
