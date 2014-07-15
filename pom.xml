@@ -13,7 +13,6 @@
 	</properties>
 
     <build>
-	<property name="archive.dir" value="/var/lib/archive/" />
         <plugins>
           <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
