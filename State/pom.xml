@@ -2,8 +2,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>State</groupId>
+    <groupId>StateReports</groupId>
     <artifactId>StateReports</artifactId>
+	<version>0.1</version>
     <description>State Reports - copy Wids for archive</description>
 
     <build>
