@@ -33,8 +33,8 @@
                                     </fileset>
                                   </copy> -->
                                   <copy todir="../../../../release">
-                                    <fileset dir="${project.basedir}/State">
-                                    <include name="**/*.wid"/>
+                                    <fileset dir="${project.basedir}">
+                                    <include name="*.wid"/>
                                     </fileset>
 									<mapper type="flatten"/>
                                   </copy>
