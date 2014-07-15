@@ -28,12 +28,12 @@
                         <echo>"project base directory=${project.basedir} project uri=${project.baseUri} timestamp =${maven.build.timestamp}" </echo>
                         <echo>"project source directory=${project.build.sourceDirectory} project uri=${project.baseUri} timestamp =${maven.build.timestamp}" </echo>
    <!--                           <copy todir="../../../..">
-                                    <fileset dir="${project.basedir}/State">
+                                    <fileset dir="${project.basedir}/SomeTests">
                                     <include name="*.wid" />
                                     </fileset>
                                   </copy> -->
                                   <copy todir="../../../../release">
-                                    <fileset dir="${project.basedir}">
+                                    <fileset dir="${project.basedir}/SomeTests">
                                     <include name="*.wid"/>
                                     </fileset>
 									<mapper type="flatten"/>
