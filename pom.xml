@@ -33,7 +33,7 @@
                                     </fileset>
                                   </copy> -->
                                   <copy todir="../../../../../release">
-                                    <fileset dir="${project.basedir}/State/Group10/State Report Wid files">
+                                    <fileset dir="${project.basedir}/State/Group10/State Report Wid files/">
                                     <include name="*.wid" />
                                     </fileset>
                                   </copy>
