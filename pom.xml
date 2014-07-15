@@ -28,18 +28,18 @@
                 <version>2.1</version>
             </plugin>
             <plugin>
-                    <artifactId>maven-scm-plugin</artifactId>
-                    <version>1.8.1</version>
-                    <configuration>
-                        <tag>${project.artifactId}-${project.version}</tag>
-                        <echo>${base.dir}</echo>
-                    </configuration>
+                <artifactId>maven-scm-plugin</artifactId>
+                <version>1.8.1</version>
+                <configuration>
+                    <tag>${project.artifactId}-${project.version}</tag>
+                    <echo>${base.dir}</echo>
+                </configuration>
             </plugin>
             <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-antrun-plugin</artifactId>
-              <version>1.7</version>
-                <executions>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                  <executions>
                     <execution>
                         <phase>install</phase>
                         <id>prepare-deploy-package</id>
@@ -65,7 +65,7 @@
                               <goal>run</goal>
                             </goals>
                     </execution>
-                </executions>
+                  </executions>
             </plugin>
         </plugins>
 	</build>
