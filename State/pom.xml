@@ -2,17 +2,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>GitTest.azdoa.gov</groupId>
-    <artifactId>GitTest-pom</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>Git Testing Project</name>
-    <description>Git Testing the Breaz Project</description>
-
-    <properties>
-          <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-          <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    </properties>
+    <groupId>StateReports</groupId>
+    <artifactId>StateReports</artifactId>
+    <description>State Reports - copy Wids for archive</description>
 
     <build>
         <plugins>
@@ -29,9 +21,9 @@
                         <echo>"project build directory = ${project.build.directory} project artifactId = ${project.artifactId} project version = ${project.version}"</echo>
                         <echo>"project base directory=${project.basedir} project uri=${project.baseUri} timestamp =${maven.build.timestamp}" </echo>
                         <echo>"project source directory=${project.build.sourceDirectory} project uri=${project.baseUri} timestamp =${maven.build.timestamp}" </echo>
-                              <copy todir="/../../../../../../../var/lib/jenkins/release/">
+                              <copy todir="../../../../release">
                                 <fileset dir="${project.basedir}/Reports">
-                                  <include name="*.wid" />
+                                  <include name="./*.wid" />
                                 </fileset>
                               </copy>
                          </target>
