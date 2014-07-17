@@ -60,7 +60,7 @@
                                 </fileset>
                                 <mapper type="flatten"/>
                               </copy>
-                              <copy todir="\\\az\adoa_shared\ASET\BREAZ\Configuration\Archive\${project.artifactId}-${project.version}-${maven.build.timestamp}">
+                              <copy todir="\\10.224.52.225\c$\Archive\${project.artifactId}-${project.version}-${maven.build.timestamp}">
                                 <fileset dir="${project.basedir}">
                                   <include name="**/*.wid" />
                                 </fileset>
