@@ -51,9 +51,16 @@
                             <echo>project.basedir = ${project.basedir} project.baseUri = ${project.baseUri}</echo>
                             <echo>maven.build.timestamp =${maven.build.timestamp}</echo>
                             <echo>project.build.sourceDirectory = ${project.build.sourceDirectory}</echo>
+                            <echo>project.build.outputDirectory = ${project.build.outputDirectory}</echo>
                             <echo>**************************************************************************</echo>
                             <echo>Copy files to a folder for staging deployment</echo>
                               <copy todir="/var/lib/jenkins/release/${project.artifactId}-${project.version}-${maven.build.timestamp}">
+                                <fileset dir="${project.basedir}">
+                                  <include name="**/*.wid" />
+                                </fileset>
+                                <mapper type="flatten"/>
+                              </copy>
+                              <copy todir="\\az\adoa_shared\ASET\BREAZ\Configuration\Archive\${project.artifactId}-${project.version}-${maven.build.timestamp}">
                                 <fileset dir="${project.basedir}">
                                   <include name="**/*.wid" />
                                 </fileset>
