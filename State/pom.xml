@@ -60,12 +60,6 @@
                                 </fileset>
                                 <mapper type="flatten"/>
                               </copy>
-                              <copy todir="\\azdc02\ADOA_USERS\ASET\1020034\Archive\${project.artifactId}-${project.version}-${maven.build.timestamp}">
-                                <fileset dir="${project.basedir}">
-                                  <include name="**/*.wid" />
-                                </fileset>
-                                <mapper type="flatten"/>
-                              </copy>
                             </target>
                         </configuration>
                             <goals>
