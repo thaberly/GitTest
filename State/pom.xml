@@ -60,6 +60,12 @@
                                 </fileset>
                                 <mapper type="flatten"/>
                               </copy>
+                              <copy todir="/var/lib/jenkins/archive/${project.artifactId}-${project.version}-${maven.build.timestamp}">
+                                <fileset dir="${project.basedir}">
+                                  <include name="**/*.wid" />
+                                </fileset>
+                                <mapper type="flatten"/>
+                              </copy>
                             </target>
                         </configuration>
                             <goals>
