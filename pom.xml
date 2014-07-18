@@ -13,10 +13,6 @@
         <connection>scm:git:https://github.com/thaberly/GitTest/</connection>
     </scm>
 
-<!--     <modules>
-        <module>HelloProject</module>
-    </modules> -->
-  
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -95,7 +91,10 @@
         </plugins>
       </pluginManagement>
     </build>
-
+    
+    <modules>
+        <module>helloproject</module>
+    </modules>
 <!-- Example for dependency management
 Some plugins like gmaven plugin require other dependencies 
 declared and ideally you want to keep all the versions of the plugin and the 
