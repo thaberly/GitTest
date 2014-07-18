@@ -51,6 +51,7 @@
                             <echo>project.basedir = ${project.basedir} project.baseUri = ${project.baseUri}</echo>
                             <echo>maven.build.timestamp =${maven.build.timestamp}</echo>
                             <echo>project.build.sourceDirectory = ${project.build.sourceDirectory}</echo>
+                            <echo>project.build.outputDirectory = ${project.build.outputDirectory}</echo>
                             <echo>**************************************************************************</echo>
                             <echo>Copy files to a folder for staging deployment</echo>
                               <copy todir="/var/lib/jenkins/release/${project.artifactId}-${project.version}-${maven.build.timestamp}">
