@@ -27,14 +27,15 @@
                             <echo>**************************************************************************</echo>
                             <echo>Copy files to a folder for staging deployment</echo>
                               <copy todir="/var/lib/jenkins/release/Interfaces/${project.artifactId}-${project.version}-${maven.build.timestamp}">
-                                <fileset dir="${project.basedir}">
+                                <fileset dir="${project.basedir}/State/Trunk">
                                   <include name="**/*.xml" />
                                 </fileset>
                                 <mapper type="flatten"/>
                               </copy>
                               <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${maven.build.timestamp}">
-                                <fileset dir="${project.basedir}">
-                                  <include name="**/*.xml" />
+                                <fileset dir="${project.basedir}/State/Trunk">
+                                  <include name="**/*.xml"/>
+                                  <exclude name="pom.xml"/>
                                 </fileset>
                                 <!-- <mapper type="flatten"/> -->
                               </copy>
