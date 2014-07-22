@@ -2,8 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>State</groupId>
   <artifactId>State</artifactId>
-  <name>State Wid Files</name>
-  <description>Copy Wid Files for distribution</description>
+  <name>State Interface xmls</name>
+  <description>Copy Interface xml's for distribution</description>
     
     <build>
         <plugins>
@@ -26,15 +26,15 @@
                             <echo>project.build.outputDirectory = ${project.build.outputDirectory}</echo>
                             <echo>**************************************************************************</echo>
                             <echo>Copy files to a folder for staging deployment</echo>
-                              <copy todir="/var/lib/jenkins/release/${project.artifactId}-${project.version}-${maven.build.timestamp}">
+                              <copy todir="/var/lib/jenkins/release/Interfaces/${project.artifactId}-${project.version}-${maven.build.timestamp}">
                                 <fileset dir="${project.basedir}">
-                                  <include name="**/*.wid" />
+                                  <include name="**/*.xml" />
                                 </fileset>
                                 <mapper type="flatten"/>
                               </copy>
-                              <copy todir="/var/lib/jenkins/archive/${project.artifactId}-${project.version}-${maven.build.timestamp}">
+                              <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${maven.build.timestamp}">
                                 <fileset dir="${project.basedir}">
-                                  <include name="**/*.wid" />
+                                  <include name="**/*.xml" />
                                 </fileset>
                                 <mapper type="flatten"/>
                               </copy>
