@@ -34,7 +34,7 @@
                               </copy>
                               <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${maven.build.timestamp}">
                                 <fileset dir="${project.basedir}/Trunk">
-                                  <include name="**/*.xml"/>
+                                  <include name="Inbound Interfaces/**/*.xml"/>
                                 </fileset>
                                 <!-- <mapper type="flatten"/> -->
                               </copy>
