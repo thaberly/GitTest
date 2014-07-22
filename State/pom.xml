@@ -28,14 +28,10 @@
                             <echo>Copy files to a folder for staging deployment</echo>
                               <copy todir="/var/lib/jenkins/release/Interfaces/${project.artifactId}-${project.version}-${maven.build.timestamp}">
                                 <fileset dir="${project.basedir}/Trunk">
-                                  <include name="**/*.xml" />
+                                  <include name="**/**/*.xml" />
                                 </fileset>
                                 <mapper type="flatten"/>
                               </copy>
-                              <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${maven.build.timestamp}">
-                                <fileset dir="${project.basedir}/Trunk">
-                                  <include name="Inbound Interfaces/**/*.xml"/>
-                                </fileset>
                                 <!-- <mapper type="flatten"/> -->
                               </copy>
                               <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${maven.build.timestamp}">
@@ -57,6 +53,6 @@
   <parent>
     <groupId>GitTest.azdoa.gov</groupId>
     <artifactId>GitTest-pom</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+  <!-- <version>0.0.1-SNAPSHOT</version> -->
   </parent>
 </project>
