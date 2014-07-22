@@ -32,7 +32,7 @@
                         <target>1.7</target>
                 </configuration>
             </plugin>
-        <plugin>
+            <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
                     <version>2.1</version>
@@ -42,10 +42,49 @@
                     <version>1.8.1</version>
                     <configuration>
                         <tag>${project.artifactId}-${project.version}</tag>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </configuration>
+                    </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                  <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <id>prepare-deploy-package</id>
+                        <configuration>
+                            <target>
+                            <echo>**************Project Paths and Information*******************************</echo>
+                            <echo>project.build.directory = ${project.build.directory}</echo>
+                            <echo>project.artifactId = ${project.artifactId} project.version = ${project.version}</echo>
+                            <echo>project.basedir = ${project.basedir} project.baseUri = ${project.baseUri}</echo>
+                            <echo>maven.build.timestamp =${maven.build.timestamp}</echo>
+                            <echo>project.build.sourceDirectory = ${project.build.sourceDirectory}</echo>
+                            <echo>project.build.outputDirectory = ${project.build.outputDirectory}</echo>
+                            <echo>**************************************************************************</echo>
+                            <echo>Copy files to a folder for staging deployment</echo>
+                              <copy todir="/var/lib/jenkins/release/${project.artifactId}-${project.version}-${maven.build.timestamp}">
+                                <fileset dir="${project.basedir}">
+                                  <include name="**/*.wid" />
+                                </fileset>
+                                <mapper type="flatten"/>
+                              </copy>
+                              <copy todir="/var/lib/jenkins/archive/${project.artifactId}-${project.version}-${maven.build.timestamp}">
+                                <fileset dir="${project.basedir}">
+                                  <include name="**/*.wid" />
+                                </fileset>
+                                <mapper type="flatten"/>
+                              </copy>
+                            </target>
+                        </configuration>
+                            <goals>
+                              <goal>run</goal>
+                            </goals>
+                    </execution>
+                  </executions>
             </plugin>
         </plugins>
-      </pluginManagement>  
+      </pluginManagement>
     </build>
 
     <properties>
