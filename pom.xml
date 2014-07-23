@@ -9,26 +9,12 @@
     <name>Git Testing Project</name>
     <description>Git Testing the Breaz Project</description>
 
-<<<<<<< HEAD
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    </properties>
-    <!--
-    <distributionManagement>
-        <repository>
-            <id>artifact-repository</id>
-            <url>artifactory/nexus</url>
-        </repository>
-    </distributionManagement>
--->
-=======
 <scm>
     <connection>scm:git:https://github.com/thaberly/GitTest/</connection>
 </scm>
 
->>>>>>> develop
     <build>
+      <pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -52,20 +38,14 @@
                     </configuration>
             </plugin>
         </plugins>
+      </pluginManagement>
     </build>
-<<<<<<< HEAD
-    
-    <modules>
-        <module>helloproject</module>
-    </modules>
-=======
 
     <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
   
->>>>>>> develop
 <!-- Example for dependency management
 Some plugins like gmaven plugin require other dependencies 
 declared and ideally you want to keep all the versions of the plugin and the 
@@ -96,6 +76,7 @@ dependencies in sync. You can use properties and the dependencyManagement sectio
         <module>HelloProject</module>
         <module>StateInterfaces</module>
         <module>StateReports</module>
+        <module>BreazTestAutomation</module>
     </modules>
 
 </project>
