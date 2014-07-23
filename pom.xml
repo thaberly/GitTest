@@ -74,7 +74,8 @@ dependencies in sync. You can use properties and the dependencyManagement sectio
 
     <modules>
         <module>HelloProject</module>
-        <module>State</module>
+        <module>StateInterfaces</module>
+        <module>StateReports</module>
     </modules>
 
 </project>

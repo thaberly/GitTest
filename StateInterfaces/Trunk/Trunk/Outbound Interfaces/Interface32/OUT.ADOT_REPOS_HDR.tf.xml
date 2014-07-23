@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--======  Transformation XML ======-->
+<!-- <!DOCTYPE Transformation SYSTEM "DJMap.dtd"> -->
+<Transformation schemaVersion = "1.2" version = "1.19" creator = "1020237" datecreated = "2014-06-23T21:06:42Z" author = "1020237" datemodified = "2014-07-10T17:34:18Z" partial = "no">
+  <LogManager loglocation = "C:\Users\1020237\Pervasive\Logs\MapDesigner\TransformMap.log" messagetypemask = "15"/>
+  <TransformationOptions>
+    <Option name = "truncationhandling" value = "0"/>
+    <Option name = "overflowhandling" value = "0"/>
+    <Option name = "nonullshandling" value = "0"/>
+    <Option name = "maxerrorcount" value = "1"/>
+    <Option name = "logfieldcount" value = "5"/>
+    <Option name = "clearlogbeforerun" value = "no"/>
+  </TransformationOptions>
+  <TransformationSources>
+    <TransformationSource name = "TransformationSource1" connectorname = "SQL Server 2008">
+      <TransformationSourceOptions>
+        <Option name = "encoding" value = "OEM"/>
+        <Option name = "wherestmt"/>
+        <Option name = "systables" value = "False"/>
+        <Option name = "views" value = "True"/>
+        <Option name = "synonyms" value = "False"/>
+        <Option name = "cursortype" value = "client"/>
+        <Option name = "layoutmismatch" value = "0"/>
+      </TransformationSourceOptions>
+      <DataAccess>
+        <ConnectionInfo>
+          <ResMgrSession name = "RMSession1" type = "SQL Server 2008" server = "10.105.10.214" userid = "AZFIN_DEV_RO" resourcemanager = "AZFIN_DEV">
+            <Password><![CDATA[AQAZAOUAxgC3AI0AdAA=]]></Password>
+          </ResMgrSession>
+          <ConnectionDetail>
+            <QueryStatement><![CDATA[use azfin_dev;
+
+select FA_NO, FA_DSCR, DEPT_CD, UNIT_CD, SUNIT_CD, 
+		ACTV_CD, SACTV_CD, FUNC_CD, SFUNC_CD, RPT_CD, SRPT_CD, CMPST_IND, FA_TYP, FA_GRP, FAGRP_CLS,
+		FAGRP_CAT, ACQ_DT, LAST_VLU_DT, VLU_SEL_DT, DEPR_METH, USE_LIFE, IN_SVC_DT, REORG_DT, 
+		LAST_DEPR_DT, SUM_FA_VL, SUM_ACCM_DEPR, SUM_NET_BOOK_VL, SUM_VLU_AM, SUM_CLSNG_CST, 
+		SUM_SLVG_VL, AMS_ROW_VERS_NO, DEPR_STRU_IND, DATE_IND, DEPR_IND, SUM_SEL_PRICE, FY, DSP_AUTH, 
+		DSP_METH, DOC_DSCR, EXTD_DOC_DSCR, FA_CTLG, SLVG_VL, DSP_DT, ACQDSP_CD, 
+		MMO_AST_IND, HIST_AST_COST, EST_AM, ACTU_AM, CUSTODN_CD, TBL_LAST_DT, FUND_CD, SFUND_CD,
+		APPR_CD, OBJ_CD, SOBJ_CD, RSRC_CD, SRSRC_CD, DOBJ_CD, DRSRC_CD, TASK_CD, STASK_CD, 
+		TASK_ORD_CD, MJR_PROG_CD, PROG_CD, PHASE_CD, ASSET_IMP_IND, LOC_CD, SLOC_CD, PPC_CD,
+		AST_SYS_NO, AST_SYS_DSCR, FN_DOC_CD, FN_DOC_DEPT_CD, FN_DOC_ID, AST_SYS_DSCR_UP, OUT_SVC_DT,
+		DSP_CD, AST_STA, DSP_REAS, DSP_COND, PROP_SRVY_RPT, SEC_INCD_RPT, POL_RPT_ID
+from R_FAR_HDR
+WHERE DEPT_CD = 'DTA'		;]]></QueryStatement>
+          </ConnectionDetail>
+        </ConnectionInfo>
+        <SampleInfo type = "All"/>
+        <DataAccessOptions>
+          <Option name = "filterrecordlimit" value = "2147483647"/>
+          <Option name = "sortduplicaterecordsallowed" value = "True"/>
+        </DataAccessOptions>
+      </DataAccess>
+    </TransformationSource>
+  </TransformationSources>
+  <TransformationTargets>
+    <TransformationTarget name = "TransformationTarget1" connectorname = "ASCII (Fixed)" outputmode = "Replace" updatemode = "UpdateEvery" updatewithnullfields = "no" replacefullrecord = "yes">
+      <TransformationTargetOptions>
+        <Option name = "codepage" value = "ANSI"/>
+        <Option name = "recsep" value = "CR-LF"/>
+        <Option name = "tabex" value = "0"/>
+        <Option name = "datatypes" value = "standard"/>
+        <Option name = "ragged" value = "False"/>
+        <Option name = "fillfields" value = "True"/>
+        <Option name = "fldsep" value = "None"/>
+        <Option name = "updateaddmismatch" value = "True"/>
+        <Option name = "layoutmismatch" value = "0"/>
+        <Option name = "recordrepetitioncount" value = "0"/>
+      </TransformationTargetOptions>
+      <DataAccess>
+        <ConnectionInfo>
+          <ResMgrSession name = "RMSession1" type = "ASCII (Fixed)"/>
+          <ConnectionDetail location = "C:\advcvnfn\data\output\OUT.ADOT.REPOS.HDR.TXT"/>
+        </ConnectionInfo>
+        <SampleInfo type = "All"/>
+        <DataAccessOptions>
+          <Option name = "filterrecordlimit" value = "2147483647"/>
+        </DataAccessOptions>
+      </DataAccess>
+    </TransformationTarget>
+  </TransformationTargets>
+  <TransformationMap mapname = "OUT.ADOT_REPOS_HDR.map.xml" originallocation = "xmldb:ref:///C:/advcvnfn/djrepos"/>
+</Transformation>
