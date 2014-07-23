@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--======  Transformation XML ======-->
+<!-- <!DOCTYPE Transformation SYSTEM "DJMap.dtd"> -->
+<Transformation schemaVersion = "1.2" version = "1.6" creator = "1020024" datecreated = "2014-07-14T01:40:20Z" author = "1020024" datemodified = "2014-07-14T01:40:20Z" partial = "no">
+  <LogManager loglocation = "C:\Users\1020024\Pervasive\Logs\MapDesigner\TransformMap.log" messagetypemask = "15"/>
+  <TransformationOptions>
+    <Option name = "truncationhandling" value = "0"/>
+    <Option name = "overflowhandling" value = "0"/>
+    <Option name = "nonullshandling" value = "0"/>
+    <Option name = "maxerrorcount" value = "1"/>
+    <Option name = "logfieldcount" value = "5"/>
+    <Option name = "clearlogbeforerun" value = "no"/>
+  </TransformationOptions>
+  <TransformationSources>
+    <TransformationSource name = "TransformationSource1" connectorname = "SQL Server 2008">
+      <TransformationSourceOptions>
+        <Option name = "encoding" value = "OEM"/>
+        <Option name = "wherestmt"/>
+        <Option name = "systables" value = "False"/>
+        <Option name = "views" value = "True"/>
+        <Option name = "synonyms" value = "False"/>
+        <Option name = "cursortype" value = "client"/>
+        <Option name = "layoutmismatch" value = "3"/>
+      </TransformationSourceOptions>
+      <DataAccess>
+        <ConnectionInfo>
+          <ResMgrSession name = "RMSession1" type = "SQL Server 2008" server = "10.105.10.214" userid = "azfin_dev_ro" resourcemanager = "azfin_dev">
+            <Password><![CDATA[AQAZAOUAxgC3AI0AdAA=]]></Password>
+          </ResMgrSession>
+          <ConnectionDetail>
+            <QueryStatement><![CDATA[
+           
+use azfin_dev;
+
+/* R_AP_CHK_RECON + MD_DOC_% */
+Select
+	Right(c.CHK_EFT_NO,9) As CHK_EFT_NO,
+	Replace(Convert(Date, c.CHK_EFT_ISS_DT), '-', '') As CHK_EFT_ISS_DT,
+	Right(c.CHK_EFT_AM,7) As CHK_EFT_AM,
+	Right(h.DOC_ACTU_AM,7) As DOC_ACTU_AM,
+	Left(c.DOC_DEPT_CD,3) As DOC_DEPT_CD,
+	a.SFUND_CD,
+	a.FUND_CD,
+	Left(c.DOC_ID,8) As DOC_ID,
+	Right(a.FY_DC,2) As FY_DC,
+	Left(v.VEND_CUST_CD,11) As VEND_CUST_CD,
+	Left(v.AD_ID,3) As AD_ID,
+	Left(v.LGL_NM,50) As LGL_NM,
+	h.CAN_TYP_DC,
+	c.CAN_REAS_CD,
+	Left(c.DOC_CD,3) As DOC_CD,
+	Replace(Convert(Date,c.CLR_DT), '-', '') As CLR_DT_WAR_CLSD,
+	Substring(Convert(VarChar, c.CLR_DT), 12, 6) As CLR_TM,
+	Left(h.DOC_LAST_USID,8) As DOC_LAST_USID,
+	c.CHK_STA,
+	Replace(Convert(Date, c.CLR_DT), '-', '') CLR_DT,
+	Month(c.CLR_DT) As CLR_DT_MONTH,
+	Substring(Convert(VarChar, Year(c.CLR_DT)),3,2) As CLR_DT_YR,
+	
+	/* Begin New Fields */
+	Replace(Convert(Date, DOC_REC_DT_DC), '-', '') AS DOC_REC_DT_DC,
+	Left(DEPT_CD, 3) AS DEPT_CD,
+	Right(DOC_FY_DC, 2) AS DOC_FY_DC,
+	Right(h.CHK_AM, 7) AS CHK_AM,
+	a.SOBJ_CD,
+	a.UNIT_CD,
+	c.TBL_LAST_DT as TBL_LAST_DT,
+	Left(a.EVNT_TYP_ID,3) AS EVNT_TYPE_ID,
+	Right(a.LN_AM, 7) AS LN_AM,
+	Left(a.OBJ_CD, 4) AS OBJ_CD,
+	Left(a.APPR_CD, 5) AS APPR_CD,
+	Right(a.DOC_ACTG_LN_NO, 3) AS DOC_ACTG_LN_NO
+	/* End New Fields */
+	
+		
+From R_AP_CHK_RECON c
+Inner Join MD_DOC_HDR h
+	on c.DOC_ID = h.DOC_ID
+	and c.DOC_CD = h.DOC_CD
+	and c.DOC_DEPT_CD = h.DOC_DEPT_CD
+	and c.DOC_VERS_NO = h.DOC_VERS_NO
+Inner Join MD_DOC_VEND v
+	on c.DOC_ID = v.DOC_ID
+	and c.DOC_CD = v.DOC_CD
+	and c.DOC_DEPT_CD = v.DOC_DEPT_CD
+	and c.DOC_VERS_NO = v.DOC_VERS_NO
+Inner Join MD_DOC_ACTG a
+	on c.DOC_ID = a.DOC_ID
+	and c.DOC_CD = a.DOC_CD
+	and c.DOC_DEPT_CD = a.DOC_DEPT_CD
+	and c.DOC_VERS_NO = a.DOC_VERS_NO
+	where c.DOC_DEPT_CD = 'DES'  
+    and convert(VARCHAR(30), c.TBL_LAST_DT, 121) >=    /* for daily records  */
+               (select 	convert(VARCHAR(30),PARM_VL,121)		
+			   from IN_APP_CTRL where PARM_NM='APPL_SYS_DT')
+ 
+	
+
+Union All
+
+/* R_AP_CHK_RECON + AD_DOC_% */
+Select
+	Right(c.CHK_EFT_NO,9) As CHK_EFT_NO,
+	Replace(Convert(Date, c.CHK_EFT_ISS_DT), '-', '') As CHK_EFT_ISS_DT,
+	Right(c.CHK_EFT_AM,7) As CHK_EFT_AM,
+	Right(h.DOC_ACTU_AM,7) As DOC_ACTU_AM,
+	Left(c.DOC_DEPT_CD,3) As DOC_DEPT_CD,
+	a.SFUND_CD,
+	a.FUND_CD,
+	Left(c.DOC_ID,8) As DOC_ID,
+	Right(a.FY_DC,2) As FY_DC,
+	Left(v.VEND_CUST_CD,11) As VEND_CUST_CD,
+	Left(v.AD_ID,3) As AD_ID,
+	Left(v.LGL_NM,50) As LGL_NM,
+	h.CAN_TYP_DC,
+	c.CAN_REAS_CD,
+	Left(c.DOC_CD,3) As DOC_CD,
+	Replace(Convert(Date,c.CLR_DT), '-', '') As CLR_DT_WAR_CLSD,
+	Substring(Convert(VarChar, c.CLR_DT), 12, 6) As CLR_TM,
+	Left(h.DOC_LAST_USID,8) As DOC_LAST_USID,
+	c.CHK_STA,
+	Replace(Convert(Date, c.CLR_DT), '-', '') CLR_DT,
+	Month(c.CLR_DT) As CLR_DT_MONTH,
+	Substring(Convert(VarChar, Year(c.CLR_DT)),3,2) As CLR_DT_YR,
+		
+	/* Begin New Fields */
+	Replace(Convert(Date, DOC_REC_DT_DC), '-', '') AS DOC_REC_DT_DC,
+	Left(DEPT_CD, 3) AS DEPT_CD,
+	Right(DOC_FY_DC, 2) AS DOC_FY_DC,
+	Right(h.CHK_AM, 7) AS CHK_AM,
+	a.SOBJ_CD,
+	a.UNIT_CD,
+	c.TBL_LAST_DT as TBL_LAST_DT,
+	Left(a.EVNT_TYP_ID,3) AS EVNT_TYPE_ID,
+	Right(a.LN_AM, 7) AS LN_AM,
+	Left(a.OBJ_CD, 4) AS OBJ_CD,
+	Left(a.APPR_CD, 5) AS APPR_CD,
+	Right(a.DOC_ACTG_LN_NO, 3) AS DOC_ACTG_LN_NO
+	/* End New Fields */
+	
+	
+From R_AP_CHK_RECON c
+Inner Join AD_DOC_HDR h
+	on c.DOC_ID = h.DOC_ID
+	and c.DOC_CD = h.DOC_CD
+	and c.DOC_DEPT_CD = h.DOC_DEPT_CD
+	and c.DOC_VERS_NO = h.DOC_VERS_NO
+Inner Join AD_DOC_VEND v
+	on c.DOC_ID = v.DOC_ID
+	and c.DOC_CD = v.DOC_CD
+	and c.DOC_DEPT_CD = v.DOC_DEPT_CD
+	and c.DOC_VERS_NO = v.DOC_VERS_NO
+Inner Join AD_DOC_ACTG a
+	on c.DOC_ID = a.DOC_ID
+	and c.DOC_CD = a.DOC_CD
+	and c.DOC_DEPT_CD = a.DOC_DEPT_CD
+	and c.DOC_VERS_NO = a.DOC_VERS_NO
+	where c.DOC_DEPT_CD = 'DES' 
+    and convert(VARCHAR(30), c.TBL_LAST_DT, 121) >=    /* for daily records  */
+               (select 	convert(VARCHAR(30),PARM_VL,121)		
+			   from IN_APP_CTRL where PARM_NM='APPL_SYS_DT')
+ 
+	
+
+Union All
+
+/* AP_PD_CHK + MD_DOC_% */
+Select
+	Right(c.CHK_EFT_NO,9) As CHK_EFT_NO,
+	Replace(Convert(Date, c.CHK_EFT_ISS_DT), '-', '') As CHK_EFT_ISS_DT,
+	Right(c.CHK_EFT_AM,7) As CHK_EFT_AM,
+	Right(h.DOC_ACTU_AM,7) As DOC_ACTU_AM,
+	Left(c.DOC_DEPT_CD,3) As DOC_DEPT_CD,
+	a.SFUND_CD,
+	a.FUND_CD,
+	Left(c.DOC_ID,8) As DOC_ID,
+	Right(a.FY_DC,2) As FY_DC,
+	Left(v.VEND_CUST_CD,11) As VEND_CUST_CD,
+	Left(v.AD_ID,3) As AD_ID,
+	Left(v.LGL_NM,50) As LGL_NM,
+	h.CAN_TYP_DC,
+	c.CAN_REAS_CD,
+	Left(c.DOC_CD,3) As DOC_CD,
+	Replace(Convert(Date,c.CLR_DT), '-', '') As CLR_DT_WAR_CLSD,
+	Substring(Convert(VarChar, c.CLR_DT), 12, 6) As CLR_TM,
+	Left(h.DOC_LAST_USID,8) As DOC_LAST_USID,
+	c.CHK_STA,
+	Replace(Convert(Date, c.CLR_DT), '-', '') CLR_DT,
+	Month(c.CLR_DT) As CLR_DT_MONTH,
+	Substring(Convert(VarChar, Year(c.CLR_DT)),3,2) As CLR_DT_YR,
+	/* Begin New Fields */
+	Replace(Convert(Date, DOC_REC_DT_DC), '-', '') AS DOC_REC_DT_DC,
+	Left(DEPT_CD, 3) AS DEPT_CD,
+	Right(DOC_FY_DC, 2) AS DOC_FY_DC,
+	Right(h.CHK_AM, 7) AS CHK_AM,
+	a.SOBJ_CD,
+	a.UNIT_CD,
+	c.TBL_LAST_DT as TBL_LAST_DT,
+	Left(a.EVNT_TYP_ID,3) AS EVNT_TYPE_ID,
+	Right(a.LN_AM, 7) AS LN_AM,
+	Left(a.OBJ_CD, 4) AS OBJ_CD,
+	Left(a.APPR_CD, 5) AS APPR_CD,
+	Right(a.DOC_ACTG_LN_NO, 3) AS DOC_ACTG_LN_NO
+	/* End New Fields */
+	
+From AP_PD_CHK c
+Inner Join MD_DOC_HDR h
+	on c.DOC_ID = h.DOC_ID
+	and c.DOC_CD = h.DOC_CD
+	and c.DOC_DEPT_CD = h.DOC_DEPT_CD
+	and c.DOC_VERS_NO = h.DOC_VERS_NO
+Inner Join MD_DOC_VEND v
+	on c.DOC_ID = v.DOC_ID
+	and c.DOC_CD = v.DOC_CD
+	and c.DOC_DEPT_CD = v.DOC_DEPT_CD
+	and c.DOC_VERS_NO = v.DOC_VERS_NO
+Inner Join MD_DOC_ACTG a
+	on c.DOC_ID = a.DOC_ID
+	and c.DOC_CD = a.DOC_CD
+	and c.DOC_DEPT_CD = a.DOC_DEPT_CD
+	and c.DOC_VERS_NO = a.DOC_VERS_NO
+	where c.DOC_DEPT_CD = 'DES'  	
+    and convert(VARCHAR(30), c.TBL_LAST_DT, 121) >=    /* for daily records  */
+               (select 	convert(VARCHAR(30),PARM_VL,121)		
+			   from IN_APP_CTRL where PARM_NM='APPL_SYS_DT')
+ 
+	
+
+Union All
+
+/* AP_PD_CHK + AD_DOC_% */
+Select
+	Right(c.CHK_EFT_NO,9) As CHK_EFT_NO,
+	Replace(Convert(Date, c.CHK_EFT_ISS_DT), '-', '') As CHK_EFT_ISS_DT,
+	Right(c.CHK_EFT_AM,7) As CHK_EFT_AM,
+	Right(h.DOC_ACTU_AM,7) As DOC_ACTU_AM,
+	Left(c.DOC_DEPT_CD,3) As DOC_DEPT_CD,
+	a.SFUND_CD,
+	a.FUND_CD,
+	Left(c.DOC_ID,8) As DOC_ID,
+	Right(a.FY_DC,2) As FY_DC,
+	Left(v.VEND_CUST_CD,11) As VEND_CUST_CD,
+	Left(v.AD_ID,3) As AD_ID,
+	Left(v.LGL_NM,50) As LGL_NM,
+	h.CAN_TYP_DC,
+	c.CAN_REAS_CD,
+	Left(c.DOC_CD,3) As DOC_CD,
+	Replace(Convert(Date,c.CLR_DT), '-', '') As CLR_DT_WAR_CLSD,
+	Substring(Convert(VarChar, c.CLR_DT), 12, 6) As CLR_TM,
+	Left(h.DOC_LAST_USID,8) As DOC_LAST_USID,
+	c.CHK_STA,
+	Replace(Convert(Date, c.CLR_DT), '-', '') CLR_DT,
+	Month(c.CLR_DT) As CLR_DT_MONTH,
+	Substring(Convert(VarChar, Year(c.CLR_DT)),3,2) As CLR_DT_YR,
+	
+	/* Begin New Fields */
+	Replace(Convert(Date, DOC_REC_DT_DC), '-', '') AS DOC_REC_DT_DC,
+	Left(DEPT_CD, 3) AS DEPT_CD,
+	Right(DOC_FY_DC, 2) AS DOC_FY_DC,
+	Right(h.CHK_AM, 7) AS CHK_AM,
+	a.SOBJ_CD,
+	a.UNIT_CD,
+	c.TBL_LAST_DT as TBL_LAST_DT,
+	Left(a.EVNT_TYP_ID,3) AS EVNT_TYPE_ID,
+	Right(a.LN_AM, 7) AS LN_AM,
+	Left(a.OBJ_CD, 4) AS OBJ_CD,
+	Left(a.APPR_CD, 5) AS APPR_CD,
+	Right(a.DOC_ACTG_LN_NO, 3) AS DOC_ACTG_LN_NO
+	/* End New Fields */
+	
+From AP_PD_CHK c
+Inner Join AD_DOC_HDR h
+	on c.DOC_ID = h.DOC_ID
+	and c.DOC_CD = h.DOC_CD
+	and c.DOC_DEPT_CD = h.DOC_DEPT_CD
+	and c.DOC_VERS_NO = h.DOC_VERS_NO
+Inner Join AD_DOC_VEND v
+	on c.DOC_ID = v.DOC_ID
+	and c.DOC_CD = v.DOC_CD
+	and c.DOC_DEPT_CD = v.DOC_DEPT_CD
+	and c.DOC_VERS_NO = v.DOC_VERS_NO
+Inner Join AD_DOC_ACTG a
+	on c.DOC_ID = a.DOC_ID
+	and c.DOC_CD = a.DOC_CD
+	and c.DOC_DEPT_CD = a.DOC_DEPT_CD
+	and c.DOC_VERS_NO = a.DOC_VERS_NO
+	where c.DOC_DEPT_CD = 'DES'  	
+    and convert(VARCHAR(30), c.TBL_LAST_DT, 121) >=    /* for daily records  */
+               (select 	convert(VARCHAR(30),PARM_VL,121)		
+			   from IN_APP_CTRL where PARM_NM='APPL_SYS_DT')
+ 
+	
+    order by TBL_LAST_DT
+	
+]]></QueryStatement>
+          </ConnectionDetail>
+        </ConnectionInfo>
+        <SampleInfo type = "All"/>
+        <DataAccessOptions>
+          <Option name = "filterrecordlimit" value = "2147483647"/>
+          <Option name = "sortduplicaterecordsallowed" value = "True"/>
+        </DataAccessOptions>
+      </DataAccess>
+    </TransformationSource>
+  </TransformationSources>
+  <TransformationTargets>
+    <TransformationTarget name = "TransformationTarget1" connectorname = "ASCII (Fixed)" outputmode = "Replace" updatemode = "UpdateEvery" updatewithnullfields = "no" replacefullrecord = "yes">
+      <TransformationTargetOptions>
+        <Option name = "codepage" value = "ANSI"/>
+        <Option name = "recsep" value = "CR-LF"/>
+        <Option name = "tabex" value = "0"/>
+        <Option name = "datatypes" value = "standard"/>
+        <Option name = "ragged" value = "False"/>
+        <Option name = "fillfields" value = "True"/>
+        <Option name = "fldsep" value = "None"/>
+        <Option name = "updateaddmismatch" value = "True"/>
+        <Option name = "layoutmismatch" value = "0"/>
+        <Option name = "recordrepetitioncount" value = "0"/>
+      </TransformationTargetOptions>
+      <DataAccess>
+        <ConnectionInfo>
+          <ResMgrSession name = "RMSession1" type = "ASCII (Fixed)"/>
+          <ConnectionDetail location = "C:\temp\OUT.DES.WAREXT.txt">
+            <UExtra><![CDATA[ASCII (Fixed)]]></UExtra>
+          </ConnectionDetail>
+        </ConnectionInfo>
+        <SampleInfo type = "All"/>
+        <DataAccessOptions>
+          <Option name = "filterrecordlimit" value = "2147483647"/>
+        </DataAccessOptions>
+      </DataAccess>
+    </TransformationTarget>
+  </TransformationTargets>
+  <TransformationMap mapname = "DES.ARICS.WAREXT.map.xml" originallocation = "xmldb:ref:///c:/advcvnfn/AZInterfaces/Interface_14_Dev/Update date comparison clause"/>
+</Transformation>

@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--======  Map XML ======-->
+<!-- <!DOCTYPE Map SYSTEM "DJMap.dtd"> -->
+<Map schemaVersion = "1.2" version = "1.13" creator = "1020237" datecreated = "2014-06-23T21:48:46Z" author = "1020237" datemodified = "2014-07-10T17:38:38Z">
+  <MapSources>
+    <MapSource name = "MapSource1">
+      <MapSchema>
+        <Schema connectorname = "SQL Server 2008" designedfor = "Source">
+          <RecordLayouts>
+            <RecordLayout name = "R1" length = "2941" status = "0">
+              <Origin origintype = "0"/>
+              <Fields>
+                <Field name = "FA_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "15" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "no" datavariablelength = "no"/>
+                </Field>
+                <Field name = "COMP_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "no" datavariablelength = "no"/>
+                </Field>
+                <Field name = "COMM_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "14" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "DEPT_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FA_TYP">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "1" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FA_CTLG">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "BASE_AST_FL">
+                  <Datatype datatype = "9" dataalias = "bit" datalength = "1" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "1"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "1.0.-1.0.true.false"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "FA_GRP">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FAGRP_CLS">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FAGRP_CAT">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "CMPST_IND">
+                  <Datatype datatype = "9" dataalias = "bit" datalength = "1" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "1"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "1.0.-1.0.true.false"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "FA_CLS_IND">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "LOC_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "SLOC_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "CMPX_BLDG">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "16" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "MANFR_NM">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "MDL_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "SR_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "TAG_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "PLAT_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "SURFC_AREA">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "COMP_EXTD_DSCR">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "16" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "AST_DSCR1">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "AST_DSCR2">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "AST_DSCR3">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "AST_DSCR4">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "AST_DSCR5">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "ACQ_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "ACQ_METH">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "ORIG_ACQ_FL">
+                  <Datatype datatype = "9" dataalias = "bit" datalength = "1" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "1"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "1.0.-1.0.true.false"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "PRCH_AUTH">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "VEND_CUST_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "LGL_NM">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "COMP_VL">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "COMP_ACCU_DEPR">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "COMP_NET_BOOK_VL">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "LAST_VLU_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "VLU_SEL_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "VLU_AM">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "REPL_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "DEPR_METH">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "DEPR_IND">
+                  <Datatype datatype = "9" dataalias = "bit" datalength = "1" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "1"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "1.0.-1.0.true.false"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "DATE_IND">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "USE_LIFE">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "IN_SVC_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "SLVG_VL">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "CLSNG_CST">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "LAST_DEPR_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "REORG_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "DSP_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "DSP_METH">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "GN_LOS_ACCT_TYP">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "SEL_PRICE">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "MMO_DSP_VL">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "DSP_AUTH">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "PR_DOC_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "PR_DOC_DEPT_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "PR_DOC_ID">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "PR_DOC_VEND_LN_NO">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "PR_DOC_COMM_LN_NO">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "AMS_ROW_VERS_NO">
+                  <Datatype datatype = "12" dataalias = "bigint" datalength = "8" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "19" datasigned = "yes"/>
+                </Field>
+                <Field name = "DEPR_STRU_IND">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "DSP_UNIT">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "5" datalength = "16" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "15" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "5"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "ACQDSP_CD">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "ACQ_CD">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "UNIT">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "5" datalength = "16" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "15" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "5"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "L_INV_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "COND_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "HIST_AST_COST">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "ALIAS_NM">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "INT_SAL_UNIT">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "5" datalength = "16" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "15" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "5"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "INT_SAL_AST_COST">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "INT_SAL_DEPR_AM">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "INT_SAL_DSP_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "INT_SAL_GN_LOS_AM">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "2" datalength = "18" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "17" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "2"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "FA_DOC_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FA_DOC_DEPT_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FA_DOC_ID">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FA_DOC_VERS_NO">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "FA_DOC_COMM_LN_NO">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "CURR_FY">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "CURR_PER">
+                  <Datatype datatype = "1" dataalias = "smallint" datalength = "2" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "4" datasigned = "yes"/>
+                </Field>
+                <Field name = "CURR_BFY">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "DOC_REC_DT_DC">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "CUSTODN_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "TBL_LAST_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "STAT_UOM">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "STAT_UNITS">
+                  <Datatype datatype = "4" dataalias = "numeric" datamaxdecimalplaces = "38" datadecimalplaces = "3" datalength = "26" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datamaxprecision = "38" dataprecision = "25" datasigned = "yes"/>
+                  <FieldOptions>
+                    <Option name = "decimallength" value = "3"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "FA_COMP_REC_NO">
+                  <Datatype datatype = "12" dataalias = "bigint" datalength = "8" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "no" dataprecision = "19" datasigned = "yes"/>
+                </Field>
+                <Field name = "ASSET_IMP_IND">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "NO_WRNTY">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "NO_REPAIR_MAINT">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "UNIT_MEAS_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "AST_SYS_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "15" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "AST_SYS_DSCR">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FN_DOC_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FN_DOC_DEPT_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FN_DOC_ID">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "AST_SYS_DSCR_UP">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "MANFR_PART_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "SUPP_PART_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "32" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "COMM_CD_SPFN">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "16" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "PROD_CAT_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "DRW_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "PIECE_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "SPEN_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "WTY_TYP">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "SURVEY_DATA">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "150" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "DECAL_ID">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "POL_RPT_ID">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "PROP_ID">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "PROP_DSCR">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "DSP_CD">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "AST_STA">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "DSP_REAS">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "250" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "DSP_COND">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "HAZ_MAT">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "150" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "BAR_CD">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "IND_ID">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "30" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "PERMIT_CERT_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "16" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "WEIGHT">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "VHCL_YR">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "VHCL_MK">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "VHCL_MDL">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "VIN">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "17" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "LIC_NO">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FUEL_TYP_ID">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "FUEL_TYP_NM">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "30" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "REPL_TYP">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+                <Field name = "AST_REPL">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "15" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "AST_REPL_DSCR">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "OUT_SVC_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "RECV_DT">
+                  <Datatype datatype = "8" dataalias = "datetime" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "12"/>
+                  <FieldOptions>
+                    <Option name = "editpicture" value = "yyyy-mm-dd H24:MM:SS"/>
+                  </FieldOptions>
+                </Field>
+                <Field name = "SIZE_VL">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "PROP_SRVY_RPT">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "SEC_INCD_RPT">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "DEBT_ID">
+                  <Datatype datatype = "151" dataalias = "varchar" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" datavariablelength = "no"/>
+                </Field>
+                <Field name = "DEBT_AUTHDI_IND">
+                  <Datatype datatype = "2" dataalias = "int" datalength = "4" datamsbfirst = "no" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datanulls = "yes" dataprecision = "9" datasigned = "yes"/>
+                </Field>
+              </Fields>
+              <RecordLayoutOptions>
+                <Option name = "uniquenameprefix" value = "FIELD1"/>
+              </RecordLayoutOptions>
+            </RecordLayout>
+          </RecordLayouts>
+        </Schema>
+      </MapSchema>
+      <RecordLayoutEvents recordlayoutname = "R1">
+        <Event name = "AfterEveryRecord">
+          <Action name = "ClearMapPut Record">
+            <Parameter position = "0" name = "target name"><![CDATA[Target]]></Parameter>
+            <Parameter position = "1" name = "record layout"><![CDATA[R1]]></Parameter>
+          </Action>
+        </Event>
+      </RecordLayoutEvents>
+    </MapSource>
+  </MapSources>
+  <MapTargets>
+    <MapTarget name = "MapTarget1">
+      <MapSchema>
+        <Schema connectorname = "ASCII (Fixed)" designedfor = "Target">
+          <RecordLayouts>
+            <RecordLayout name = "R1" length = "0" status = "0">
+              <Origin origintype = "0"/>
+              <Fields>
+                <Field name = "FA_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "15" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "COMP_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "COMM_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "14" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DEPT_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FA_TYP">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "1" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FA_CTLG">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "BASE_AST_FL">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "1" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FA_GRP">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FAGRP_CLS">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FAGRP_CAT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "CMPST_IND">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "1" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FA_CLS_IND">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "LOC_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "SLOC_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "CMPX_BLDG">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "1500" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "MANFR_NM">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "MDL_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "SR_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "TAG_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PLAT_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "SURFC_AREA">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "COMP_EXTD_DSCR">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "1500" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AST_DSCR1">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AST_DSCR2">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AST_DSCR3">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AST_DSCR4">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AST_DSCR5">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "ACQ_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "ACQ_METH">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "ORIG_ACQ_FL">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "1" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PRCH_AUTH">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "VEND_CUST_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "LGL_NM">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "COMP_VL">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "COMP_ACCU_DEPR">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "COMP_NET_BOOK_VL">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "LAST_VLU_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "VLU_SEL_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "VLU_AM">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "REPL_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DEPR_METH">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DEPR_IND">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "1" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DATE_IND">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "USE_LIFE">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "IN_SVC_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "SLVG_VL">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "CLSNG_CST">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "LAST_DEPR_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "REORG_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DSP_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DSP_METH">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "GN_LOS_ACCT_TYP">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "SEL_PRICE">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "MMO_DSP_VL">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DSP_AUTH">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PR_DOC_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PR_DOC_DEPT_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PR_DOC_ID">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PR_DOC_VEND_LN_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PR_DOC_COMM_LN_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AMS_ROW_VERS_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DEPR_STRU_IND">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DSP_UNIT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "17" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "ACQDSP_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "ACQ_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "UNIT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "17" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "L_INV_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "COND_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "HIST_AST_COST">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "ALIAS_NM">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "INT_SAL_UNIT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "17" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "INT_SAL_AST_COST">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "INT_SAL_DEPR_AM">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "INT_SAL_DSP_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "INT_SAL_GN_LOS_AM">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "19" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FA_DOC_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FA_DOC_DEPT_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FA_DOC_ID">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FA_DOC_VERS_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FA_DOC_COMM_LN_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "CURR_FY">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "CURR_PER">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "5" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "CURR_BFY">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DOC_REC_DT_DC">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "CUSTODN_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "TBL_LAST_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "23" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "STAT_UOM">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "STAT_UNITS">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "27" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FA_COMP_REC_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "ASSET_IMP_IND">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "NO_WRNTY">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "NO_REPAIR_MAINT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "UNIT_MEAS_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AST_SYS_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "15" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AST_SYS_DSCR">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FN_DOC_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "8" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FN_DOC_DEPT_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FN_DOC_ID">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AST_SYS_DSCR_UP">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "MANFR_PART_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "SUPP_PART_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "32" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "COMM_CD_SPFN">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "1500" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PROD_CAT_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DRW_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PIECE_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "SPEN_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "WTY_TYP">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "SURVEY_DATA">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "150" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DECAL_ID">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "POL_RPT_ID">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PROP_ID">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PROP_DSCR">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DSP_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AST_STA">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DSP_REAS">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "250" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DSP_COND">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "HAZ_MAT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "150" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "BAR_CD">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "IND_ID">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "30" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PERMIT_CERT_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "1500" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "WEIGHT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "VHCL_YR">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "VHCL_MK">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "VHCL_MDL">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "VIN">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "17" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "LIC_NO">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FUEL_TYP_ID">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "FUEL_TYP_NM">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "30" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "REPL_TYP">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AST_REPL">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "15" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "AST_REPL_DSCR">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "60" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "OUT_SVC_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "RECV_DT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "10" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "SIZE_VL">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "4" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "PROP_SRVY_RPT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "SEC_INCD_RPT">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "25" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DEBT_ID">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "20" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+                <Field name = "DEBT_AUTHDI_IND">
+                  <Datatype datatype = "0" dataalias = "Text" dataalign = "Left" datalength = "11" dataidentity = "no" dataautoinc = "no" datacurrency = "no" datarowversion = "no" datapadchar = " "/>
+                </Field>
+              </Fields>
+              <RecordLayoutOptions>
+                <Option name = "uniquenameprefix" value = "FIELD1"/>
+              </RecordLayoutOptions>
+            </RecordLayout>
+          </RecordLayouts>
+        </Schema>
+        <MapExpressions>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FA_NO"><![CDATA[Fields("FA_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "COMP_NO"><![CDATA[Fields("COMP_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "COMM_CD"><![CDATA[Fields("COMM_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DEPT_CD"><![CDATA[Fields("DEPT_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FA_TYP"><![CDATA[Fields("FA_TYP")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FA_CTLG"><![CDATA[Fields("FA_CTLG")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "BASE_AST_FL"><![CDATA[Fields("BASE_AST_FL")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FA_GRP"><![CDATA[Fields("FA_GRP")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FAGRP_CLS"><![CDATA[Fields("FAGRP_CLS")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FAGRP_CAT"><![CDATA[Fields("FAGRP_CAT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "CMPST_IND"><![CDATA[Fields("CMPST_IND")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FA_CLS_IND"><![CDATA[Fields("FA_CLS_IND")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "LOC_CD"><![CDATA[Fields("LOC_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "SLOC_CD"><![CDATA[Fields("SLOC_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "CMPX_BLDG"><![CDATA[Fields("CMPX_BLDG")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "MANFR_NM"><![CDATA[Fields("MANFR_NM")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "MDL_NO"><![CDATA[Fields("MDL_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "SR_NO"><![CDATA[Fields("SR_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "TAG_NO"><![CDATA[Fields("TAG_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PLAT_NO"><![CDATA[Fields("PLAT_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "SURFC_AREA"><![CDATA[Fields("SURFC_AREA")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "COMP_EXTD_DSCR"><![CDATA[Fields("COMP_EXTD_DSCR")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AST_DSCR1"><![CDATA[Fields("AST_DSCR1")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AST_DSCR2"><![CDATA[Fields("AST_DSCR2")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AST_DSCR3"><![CDATA[Fields("AST_DSCR3")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AST_DSCR4"><![CDATA[Fields("AST_DSCR4")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AST_DSCR5"><![CDATA[Fields("AST_DSCR5")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "ACQ_DT"><![CDATA[Fields("ACQ_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "ACQ_METH"><![CDATA[Fields("ACQ_METH")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "ORIG_ACQ_FL"><![CDATA[Fields("ORIG_ACQ_FL")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PRCH_AUTH"><![CDATA[Fields("PRCH_AUTH")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "VEND_CUST_CD"><![CDATA[Fields("VEND_CUST_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "LGL_NM"><![CDATA[Fields("LGL_NM")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "COMP_VL"><![CDATA[Fields("COMP_VL")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "COMP_ACCU_DEPR"><![CDATA[Fields("COMP_ACCU_DEPR")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "COMP_NET_BOOK_VL"><![CDATA[Fields("COMP_NET_BOOK_VL")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "LAST_VLU_DT"><![CDATA[Fields("LAST_VLU_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "VLU_SEL_DT"><![CDATA[Fields("VLU_SEL_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "VLU_AM"><![CDATA[Fields("VLU_AM")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "REPL_DT"><![CDATA[Fields("REPL_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DEPR_METH"><![CDATA[Fields("DEPR_METH")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DEPR_IND"><![CDATA[Fields("DEPR_IND")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DATE_IND"><![CDATA[Fields("DATE_IND")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "USE_LIFE"><![CDATA[Fields("USE_LIFE")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "IN_SVC_DT"><![CDATA[Fields("IN_SVC_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "SLVG_VL"><![CDATA[Fields("SLVG_VL")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "CLSNG_CST"><![CDATA[Fields("CLSNG_CST")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "LAST_DEPR_DT"><![CDATA[Fields("LAST_DEPR_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "REORG_DT"><![CDATA[Fields("REORG_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DSP_DT"><![CDATA[Fields("DSP_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DSP_METH"><![CDATA[Fields("DSP_METH")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "GN_LOS_ACCT_TYP"><![CDATA[Fields("GN_LOS_ACCT_TYP")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "SEL_PRICE"><![CDATA[Fields("SEL_PRICE")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "MMO_DSP_VL"><![CDATA[Fields("MMO_DSP_VL")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DSP_AUTH"><![CDATA[Fields("DSP_AUTH")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PR_DOC_CD"><![CDATA[Fields("PR_DOC_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PR_DOC_DEPT_CD"><![CDATA[Fields("PR_DOC_DEPT_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PR_DOC_ID"><![CDATA[Fields("PR_DOC_ID")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PR_DOC_VEND_LN_NO"><![CDATA[Fields("PR_DOC_VEND_LN_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PR_DOC_COMM_LN_NO"><![CDATA[Fields("PR_DOC_COMM_LN_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AMS_ROW_VERS_NO"><![CDATA[Fields("AMS_ROW_VERS_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DEPR_STRU_IND"><![CDATA[Fields("DEPR_STRU_IND")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DSP_UNIT"><![CDATA[Fields("DSP_UNIT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "ACQDSP_CD"><![CDATA[Fields("ACQDSP_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "ACQ_CD"><![CDATA[Fields("ACQ_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "UNIT"><![CDATA[Fields("UNIT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "L_INV_DT"><![CDATA[Fields("L_INV_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "COND_CD"><![CDATA[Fields("COND_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "HIST_AST_COST"><![CDATA[Fields("HIST_AST_COST")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "ALIAS_NM"><![CDATA[Fields("ALIAS_NM")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "INT_SAL_UNIT"><![CDATA[Fields("INT_SAL_UNIT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "INT_SAL_AST_COST"><![CDATA[Fields("INT_SAL_AST_COST")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "INT_SAL_DEPR_AM"><![CDATA[Fields("INT_SAL_DEPR_AM")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "INT_SAL_DSP_DT"><![CDATA[Fields("INT_SAL_DSP_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "INT_SAL_GN_LOS_AM"><![CDATA[Fields("INT_SAL_GN_LOS_AM")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FA_DOC_CD"><![CDATA[Fields("FA_DOC_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FA_DOC_DEPT_CD"><![CDATA[Fields("FA_DOC_DEPT_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FA_DOC_ID"><![CDATA[Fields("FA_DOC_ID")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FA_DOC_VERS_NO"><![CDATA[Fields("FA_DOC_VERS_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FA_DOC_COMM_LN_NO"><![CDATA[Fields("FA_DOC_COMM_LN_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "CURR_FY"><![CDATA[Fields("CURR_FY")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "CURR_PER"><![CDATA[Fields("CURR_PER")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "CURR_BFY"><![CDATA[Fields("CURR_BFY")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DOC_REC_DT_DC"><![CDATA[Fields("DOC_REC_DT_DC")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "CUSTODN_CD"><![CDATA[Fields("CUSTODN_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "TBL_LAST_DT"><![CDATA[Fields("TBL_LAST_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "STAT_UOM"><![CDATA[Fields("STAT_UOM")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "STAT_UNITS"><![CDATA[Fields("STAT_UNITS")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FA_COMP_REC_NO"><![CDATA[Fields("FA_COMP_REC_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "ASSET_IMP_IND"><![CDATA[Fields("ASSET_IMP_IND")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "NO_WRNTY"><![CDATA[Fields("NO_WRNTY")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "NO_REPAIR_MAINT"><![CDATA[Fields("NO_REPAIR_MAINT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "UNIT_MEAS_CD"><![CDATA[Fields("UNIT_MEAS_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AST_SYS_NO"><![CDATA[Fields("AST_SYS_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AST_SYS_DSCR"><![CDATA[Fields("AST_SYS_DSCR")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FN_DOC_CD"><![CDATA[Fields("FN_DOC_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FN_DOC_DEPT_CD"><![CDATA[Fields("FN_DOC_DEPT_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FN_DOC_ID"><![CDATA[Fields("FN_DOC_ID")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AST_SYS_DSCR_UP"><![CDATA[Fields("AST_SYS_DSCR_UP")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "MANFR_PART_NO"><![CDATA[Fields("MANFR_PART_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "SUPP_PART_NO"><![CDATA[Fields("SUPP_PART_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "COMM_CD_SPFN"><![CDATA[Fields("COMM_CD_SPFN")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PROD_CAT_NO"><![CDATA[Fields("PROD_CAT_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DRW_NO"><![CDATA[Fields("DRW_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PIECE_NO"><![CDATA[Fields("PIECE_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "SPEN_NO"><![CDATA[Fields("SPEN_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "WTY_TYP"><![CDATA[Fields("WTY_TYP")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "SURVEY_DATA"><![CDATA[Fields("SURVEY_DATA")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DECAL_ID"><![CDATA[Fields("DECAL_ID")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "POL_RPT_ID"><![CDATA[Fields("POL_RPT_ID")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PROP_ID"><![CDATA[Fields("PROP_ID")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PROP_DSCR"><![CDATA[Fields("PROP_DSCR")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DSP_CD"><![CDATA[Fields("DSP_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AST_STA"><![CDATA[Fields("AST_STA")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DSP_REAS"><![CDATA[Fields("DSP_REAS")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DSP_COND"><![CDATA[Fields("DSP_COND")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "HAZ_MAT"><![CDATA[Fields("HAZ_MAT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "BAR_CD"><![CDATA[Fields("BAR_CD")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "IND_ID"><![CDATA[Fields("IND_ID")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PERMIT_CERT_NO"><![CDATA[Fields("PERMIT_CERT_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "WEIGHT"><![CDATA[Fields("WEIGHT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "VHCL_YR"><![CDATA[Fields("VHCL_YR")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "VHCL_MK"><![CDATA[Fields("VHCL_MK")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "VHCL_MDL"><![CDATA[Fields("VHCL_MDL")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "VIN"><![CDATA[Fields("VIN")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "LIC_NO"><![CDATA[Fields("LIC_NO")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FUEL_TYP_ID"><![CDATA[Fields("FUEL_TYP_ID")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "FUEL_TYP_NM"><![CDATA[Fields("FUEL_TYP_NM")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "REPL_TYP"><![CDATA[Fields("REPL_TYP")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AST_REPL"><![CDATA[Fields("AST_REPL")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "AST_REPL_DSCR"><![CDATA[Fields("AST_REPL_DSCR")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "OUT_SVC_DT"><![CDATA[Fields("OUT_SVC_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "RECV_DT"><![CDATA[Fields("RECV_DT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "SIZE_VL"><![CDATA[Fields("SIZE_VL")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "PROP_SRVY_RPT"><![CDATA[Fields("PROP_SRVY_RPT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "SEC_INCD_RPT"><![CDATA[Fields("SEC_INCD_RPT")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DEBT_ID"><![CDATA[Fields("DEBT_ID")]]></MapExpression>
+          <MapExpression language = "DJScript" recordlayoutname = "R1" fieldname = "DEBT_AUTHDI_IND"><![CDATA[Fields("DEBT_AUTHDI_IND")]]></MapExpression>
+        </MapExpressions>
+      </MapSchema>
+    </MapTarget>
+  </MapTargets>
+</Map>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProjectSettings targetNamespace="www.az.gov\BreazAutomation"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<ProjectName>BREAZ</ProjectName>
+	<ProjectVersion>1.0</ProjectVersion>
+	<DefaultAgentTimeout>30000</DefaultAgentTimeout>
+	<ControllerFilePath>C:\BreazAutomation\Input\Controller.xls</ControllerFilePath>
+	<WriteDebugLog>True</WriteDebugLog>
+</ProjectSettings>
