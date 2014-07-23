@@ -76,6 +76,7 @@ dependencies in sync. You can use properties and the dependencyManagement sectio
         <module>HelloProject</module>
         <module>StateInterfaces</module>
         <module>StateReports</module>
+        <module>BreazTestAutomation</module>
     </modules>
 
 </project>
