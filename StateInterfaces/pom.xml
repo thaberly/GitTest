@@ -33,8 +33,8 @@
                                 <!-- <mapper type="flatten"/> -->
                               </copy>
                               <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${maven.build.timestamp}">
-                                <fileset dir="${project.basedir}/Trunk">
-                                  <include name="**/*.xml"/>
+                                <fileset dir="${project.basedir}/Trunk/">
+                                  <include name="**/**/*.xml"/>
                                 </fileset>
                                 <!-- <mapper type="flatten"/> -->
                               </copy>
