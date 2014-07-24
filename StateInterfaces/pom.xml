@@ -16,7 +16,7 @@
                         <phase>install</phase>
                         <id>prepare-deploy-package</id>
                         <configuration>
-                            <target>
+                          <tasks>
                             <echo>**************Project Paths and Information*******************************</echo>
                             <echo>project.build.directory = ${project.build.directory}</echo>
                             <echo>project.artifactId = ${project.artifactId} project.version = ${project.version}</echo>
@@ -25,8 +25,9 @@
                             <echo>project.build.sourceDirectory = ${project.build.sourceDirectory}</echo>
                             <echo>project.build.outputDirectory = ${project.build.outputDirectory}</echo>
                             <echo>**************************************************************************</echo>
+                            <property name="timestamp" refid="${maven.build.timestamp}">
+                            <target>
                             <echo>Copy files to a folder for staging deployment</echo>
-                            <property name="timestamp"> value="${maven.build.timestamp}"/>
                               <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${timestamp}">
                                 <fileset dir="${project.basedir}/Trunk">
                                   <include name="**/**/*.xml"/>
