@@ -90,6 +90,7 @@
                               <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${timestamp}">
                                 <fileset dir="${project.basedir}">
                                   <include name="**/*.war"/>
+                                  <mapper type="flatten"/>
                                 </fileset>
                               </copy>
                           </target>
