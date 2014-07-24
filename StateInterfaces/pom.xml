@@ -25,7 +25,8 @@
                             <echo>project.build.sourceDirectory = ${project.build.sourceDirectory}</echo>
                             <echo>project.build.outputDirectory = ${project.build.outputDirectory}</echo>
                             <echo>**************************************************************************</echo>
-                            <property name="timestamp" refid="${maven.build.timestamp}">
+                            <property name="timestamp" refid="${maven.build.timestamp}"/>
+                            </tasks>
                             <target>
                             <echo>Copy files to a folder for staging deployment</echo>
                               <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${timestamp}">
