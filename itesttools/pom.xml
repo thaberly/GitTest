@@ -88,7 +88,7 @@
                             <echo>Copy files to a folder for staging deployment</echo>
                             <!--This copy todir should actually be going to a fileserver or a share folder -->
                               <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${timestamp}">
-                                <fileset dir="${project.basedir}/itesttools">
+                                <fileset dir="${project.basedir}/">
                                   <include name="*.war"/>
                                 </fileset>
                               </copy>
