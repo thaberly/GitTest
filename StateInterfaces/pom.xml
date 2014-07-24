@@ -5,6 +5,44 @@
   <name>State Interface xml's</name>
   <description>Copy Interface xml's for Distribution</description>
     
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                  <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <id>prepare-deploy-package</id>
+                        <configuration>
+                          <target>
+                            <echo>**************Project Paths and Information*******************************</echo>
+                            <echo>project.build.directory = ${project.build.directory}</echo>
+                            <echo>project.artifactId = ${project.artifactId} project.version = ${project.version}</echo>
+                            <echo>project.basedir = ${project.basedir} project.baseUri = ${project.baseUri}</echo>
+                            <echo>maven.build.timestamp =${maven.build.timestamp}</echo>
+                            <echo>project.build.sourceDirectory = ${project.build.sourceDirectory}</echo>
+                            <echo>project.build.outputDirectory = ${project.build.outputDirectory}</echo>
+                            <echo>**************************************************************************</echo>
+                            <property name="timestamp" value="${maven.build.timestamp}"/> <!--In case the time changes during copies -->
+                            <echo>Copy files to a folder for staging deployment</echo>
+                            <!--This copy todir should actually be going to a fileserver or a share folder -->
+                              <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${timestamp}">
+                                <fileset dir="${project.basedir}/Trunk">
+                                  <include name="**/**/*.xml"/>
+                                </fileset>
+                              </copy>
+                          </target>
+                        </configuration>
+                            <goals>
+                              <goal>run</goal>
+                            </goals>
+                    </execution>
+                  </executions>
+            </plugin>
+        </plugins>
+    </build>
   <parent>
     <groupId>GitTest.azdoa.gov</groupId>
     <artifactId>GitTest-pom</artifactId>
