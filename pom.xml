@@ -2,10 +2,12 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     
+
     <groupId>GitTest.azdoa.gov</groupId>
     <artifactId>GitTest-pom</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <name>Git Testing Project</name>
     <description>Git Testing the Breaz Project</description>
 
@@ -15,16 +17,14 @@
         <module>StateInterfaces</module>
         <module>StateReports</module>
         <module>BreazTestAutomation</module>
+
     </modules>    
     <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
     
-<scm>
-    <connection>scm:git:https://github.com/thaberly/GitTest/</connection>
-</scm>
-    
+
     <build>
       <pluginManagement>
         <plugins>
@@ -36,18 +36,6 @@
                         <source>1.7</source>
                         <target>1.7</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>versions-maven-plugin</artifactId>
-                    <version>2.1</version>
-            </plugin>
-            <plugin>
-                    <artifactId>maven-scm-plugin</artifactId>
-                    <version>1.8.1</version>
-                    <configuration>
-                        <tag>${project.artifactId}-${project.version}</tag>
-                    </configuration>
             </plugin>
         </plugins>
       </pluginManagement>
