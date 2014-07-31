@@ -26,7 +26,7 @@
                             <echo>project.build.outputDirectory = ${project.build.outputDirectory}</echo>
                             <echo>**************************************************************************</echo>
                             <echo>Copy files to a folder for staging deployment</echo>
-                              <!-- <copy todir="/var/lib/jenkins/archive/Reports/${project.artifactId}-${project.version}-${maven.build.timestamp}"> -->
+                              
                                 <fileset dir="${project.basedir}">
                                   <include name="**/*.wid"/>
                                 </fileset>

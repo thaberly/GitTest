@@ -25,7 +25,7 @@
                             <echo>project.build.sourceDirectory = ${project.build.sourceDirectory}</echo>
                             <echo>project.build.outputDirectory = ${project.build.outputDirectory}</echo>
                             <echo>**************************************************************************</echo>
-                            <!--<property name="timestamp" value="${maven.build.timestamp}"/> <!--In case the time changes during copies -->
+                            
                             <echo>Copy files to a folder for staging deployment</echo>
                             <!--This copy todir should actually be going to a fileserver or a share folder -->
                               <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${timestamp}">
