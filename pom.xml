@@ -22,7 +22,6 @@
     <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-      <property name="timestamp" value="${maven.build.timestamp}"/> <!--In case the time changes during copies -->
     </properties>
     
 
