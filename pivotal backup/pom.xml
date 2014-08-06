@@ -6,13 +6,13 @@
   <groupId>com.azdoa.app</groupId>
   <artifactId>pivotal-backup</artifactId>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>pivotal-backup</name>
   <url>http://maven.apache.org</url>
   <parent>
-  	<groupId>BreazInterfaces</groupId>
-  	<artifactId>BreazInterfaces-pom</artifactId>
-  	<version>0.0.1-SNAPSHOT</version>
+    <groupId>GitTest.azdoa.gov</groupId>
+    <artifactId>GitTest-pom</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
   </parent>
   <dependencies>
     <dependency>
