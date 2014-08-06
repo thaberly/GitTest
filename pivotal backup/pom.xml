@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.azdoa.app</groupId>
+  <artifactId>pivotal-backup</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0</version>
+  <name>pivotal-backup</name>
+  <url>http://maven.apache.org</url>
+  <parent>
+  	<groupId>BreazInterfaces</groupId>
+  	<artifactId>BreazInterfaces-pom</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+	<dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-java</artifactId>
+		<version>2.42.2</version>
+	</dependency>
+  </dependencies>
+  <build>
+		<plugins>
+            <plugin>
+				 <groupId>org.apache.maven.plugins</groupId>
+        		 <artifactId>maven-shade-plugin</artifactId>
+        		 <version>2.3</version>
+	            <executions>
+		           <execution>
+     		         <phase>package</phase>
+            	  	 <goals><goal>shade</goal></goals>
+    		       </execution>
+				</executions>
+        		 <configuration>
+        		    <createDependencyReducedPom>FALSE</createDependencyReducedPom>        		 
+	                <transformers>
+                    <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                        <manifestEntries>	
+	                        <Main-Class>com.azdoa.app.App</Main-Class>	
+							<build-number>1</build-number>
+						</manifestEntries>
+	                </transformer>
+	              </transformers>
+	            </configuration>
+			</plugin>                 		                             		
+		  <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                  <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <id>prepare-deploy-package</id>
+                        <configuration>
+                          <target>
+                            <property name="timestamp" value="${maven.build.timestamp}"/>
+                            <echo>Copy files to a folder for staging deployment</echo>
+							  <copy todir="/var/lib/jenkins/archive/Interfaces/${project.artifactId}-${project.version}-${timestamp}">
+                                <fileset dir="${project.basedir}">
+                                  <include name="**\pivotal-backup-*.jar"/>
+                                </fileset>
+                                <mapper type="flatten"/>
+                              </copy>
+                          </target>
+                        </configuration>
+                          <goals>
+                            <goal>run</goal>
+                          </goals>
+                    </execution>
+                  </executions>
+            </plugin>             
+		</plugins>
+  </build>
+</project>

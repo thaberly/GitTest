@@ -17,6 +17,7 @@
         <module>StateInterfaces</module>
         <module>StateReports</module>
         <module>BreazTestAutomation</module>
+        <module>pivotal backup</module>
     </modules>
     
     <properties>
