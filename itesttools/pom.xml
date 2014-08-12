@@ -93,6 +93,11 @@
                                 </fileset>
                                 <mapper type="flatten"/>
                               </copy>
+                              <copy todir="/opt/bitnami/apache-tomcat/webapps">
+                                <fileset dir="${project.basedir}">
+                                  <include name="**/*.war"/>
+                                </fileset>
+                                <mapper type="flatten"/>
                           </target>
                         </configuration>
                             <goals>
